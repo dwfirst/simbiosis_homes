@@ -69,3 +69,9 @@ This concept documentation is licensed under **CC BY-NC-SA 4.0**. Attribution re
 This work is licensed under **CC BY-NC-SA 4.0**. Attribution required. Commercial use requires permission from the author. See [LICENSE](LICENSE) for full text.
 
 **Authorship note:** Concept developed by Dwane Kimbrough in collaboration with an AI assistant (DeepSeek). Public commit history in this repository serves as a dated record of authorship.
+
+## Development History
+
+Initial concept developed by Dwane Kimbrough over one month (October 2026) in collaboration with Gemini (Google). Engineering documentation, structuring, and repository setup (November 2026) in collaboration with DeepSeek. The concept is the result of sustained human direction, not a single prompt.
+
+This is an international collaboration: an American AI for concept exploration, a Chinese AI for engineering documentation, and a human visionary who directed both.

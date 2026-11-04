@@ -177,3 +177,50 @@ Any deviation from the base case must be reviewed against these requirements. If
 - Water system pumps and UV power (Node 06).
 - Structural design of roof and terrace for panel loads (Node 08).
 - Electrical code compliance (licensed electrician required).
+
+## 12. Technical Building Zoning & Fuel Storage
+
+### 12.1 Functional Zones Inside the Technical Building
+The technical building is divided into three functional zones, separated by 1-hour fire-rated partitions:
+**Zone A - Wet Zone:** pumps, circulators, heat exchangers, expansion tanks, buffer tank. Floor drain and leak detection. No ignition sources. No fuel storage.
+**Zone B - Energy Zone:** diesel generator, battery bank (LiFePO4), inverters, main distribution panel. Separated from Zone A by 1-hour fire partition. Ventilated to the outside. Physical kill switch at the entrance.
+**Zone C - Controls Zone:** primary controller, network switches, terminal blocks. Inside Zone B, in a separate locked cabinet. Secondary controller is in the main building server room.
+**Base requirement:** fuel storage must never be in the same compartment as the boiler or the battery bank without a fire separation.
+
+### 12.2 Propane Tank Placement
+Propane is the backup fuel for the generator. It is never stored inside the technical building. It is an outdoor, above-ground or buried tank.
+**Case 1: Site is NOT in a designated WUI (Wildland-Urban Interface).** Above-ground tank permitted. Tank size 125-500 gallons: minimum 10 feet from any building, property line, and ignition source. Tank size 501-2,000 gallons: minimum 25 feet from the same.
+**Base case for the project:** two 500-gallon tanks manifolded together. Each tank keeps the 10-foot setback. This provides redundancy and avoids the 25-foot setback required for a single larger tank.
+**Case 2: Site IS in a designated WUI.** Montana WUI rules require propane tanks to be buried underground, or partially covered with at least 1 foot of earth, sand, or noncombustible material. If soil or bedrock prevents burial, install in a vault or use another protective method that complies with NFPA 30 and NFPA 58.
+**Base requirement:** the propane tank location must allow year-round delivery access. In Montana, a tank behind a snowbank or on a steep slope cannot be filled in February. The access path must be plowed and maintained.
+
+### 12.3 Diesel Generator Fuel Tank
+**Base case:** diesel tank is a sub-base tank under the generator, or a double-wall tank inside the technical building Energy Zone.
+**Sub-base tank:** generator sits on top of a UL-listed tank.
+**Indoor tank (double-wall):** permitted inside the Energy Zone if it is UL 2085 listed or has secondary containment. Capacity limit for indoor storage: confirm with local fire code.
+**Vent and fill:** fill connection and vent must terminate outside the building, at least 5 feet from building openings and property lines.
+**Spill containment:** required for any indoor tank.
+**Base requirement:** diesel fuel degrades over time. The tank must have a drain valve at the low point and a schedule for fuel polishing or replacement (every 12-24 months in standby service).
+
+### 12.4 Solid-Fuel Boiler Placement
+Boiler is in Zone A (Wet Zone) or a dedicated boiler room adjacent to Zone A.
+**Low-water cutoff:** Montana boiler safety rules require a low-water fuel cutoff for automatically fired hot water boilers. The threshold in the model code is 400,000 BTU/hr input. Below that, the cutoff may not be mandatory, but the boiler manufacturer instructions may require it.
+**Base case:** select a boiler with a factory-installed low-water cutoff regardless of input size.
+**Chimney:** exterior chimney, above the roof line, with a spark arrestor.
+
+### 12.5 Sensors for Fuel and Generator
+**Propane tank:** level gauge (mechanical, readable without power) plus optional electronic level sensor. Low-level alert at 20 percent.
+**Diesel tank:** level gauge, water-in-fuel sensor, leak detection in the containment dike.
+**Generator:** run status, fuel level, oil pressure, coolant temperature, battery voltage.
+**Boiler:** water temperature, low-water cutoff status, flue temperature (optional).
+All electronic sensors feed the primary controller. Mechanical gauges remain as the analog fallback.
+
+### 12.6 Flexibility Clause (Addition)
+The base requirements for this section: fuel storage must be separated from ignition sources by code-required distances or fire-rated construction. Propane tank setbacks must match the tank size and WUI status. Diesel tank must have spill containment and outdoor venting. Low-water cutoff on the boiler is mandatory. Delivery access to the propane tank must be maintained year-round. Mechanical fuel gauges must remain.
+
+### 12.7 Variant Summary
+Site is WUI: bury propane tank or use vault. Cost +3000 to +8000 USD.
+1000+ gallon propane needed: two 500-gallon tanks manifolded. Cost +1500 to +3000 USD vs single tank.
+Diesel tank indoors: double-wall UL 2085 tank plus containment. Cost +2000 to +5000 USD.
+Boiler below 400k BTU: low-water cutoff may be omitted per code, but install anyway. Cost +500 to +1000 USD.
+Delivery access difficult in winter: extend driveway, add turn-around, or move tank closer to road. Cost +2000 to +10000 USD.

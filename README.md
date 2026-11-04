@@ -11,12 +11,11 @@ Concept phase. Documentation only. No code.
 A residential building that heats itself from the waste heat of an embedded AI compute cluster, with a modular swappable cooling spine, a tropical greenhouse, and full energy autonomy.
 
 ## Structure
-- ssets/ — visualizations
-- docs/concept/ — overall concept
-- docs/nodes/ — engineering nodes (one per component)
-- docs/legal/ — regulatory and zoning notes
-- docs/finance/ — cost and investment rationale
-- docs/raw/ — original brainstorm logs
+- `assets/` — visualizations
+- `docs/concept/` — overall concept
+- `docs/nodes/` — engineering nodes (one per component)
+- `docs/legal/` — regulatory and zoning notes
+- `docs/finance/` — cost and investment rationale
 
 ## Language
 GitHub-facing documents: English.

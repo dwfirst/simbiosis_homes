@@ -40,6 +40,9 @@ Seismic Category D, wind up to 115 mph, and deep winter. The climate is not a bu
 - [Legal & Permitting](docs/legal/01-zoning-permits.md) — LUP, state building permit exemption, seismic category, water rights, WUI
 
 ### Finance
+
+### Outreach
+- [Open Letter to Governor Greg Gianforte](docs/outreach/01-letter-to-governor.md) — ready to copy and send
 - [Cost, ROI, and Beverly Hills Comparison](docs/finance/01-cost-roi.md) — capital cost, operating economics, variants
 
 ## Core principles
